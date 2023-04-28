@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        {% if error %}
+        <p>{{ error }}</p>
+        {% endif %}
+        Email<input type="email" name="email"><br>
+        Password<input type="password" name="password"><br>
+        <input type="submit" value="login">
+    </form>
+    <a href="{%url 'signup_view' %}">Create New Account</a>
+    <a href="{%url 'hosteladmin_view' %}">Hostel Admin login</a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Features of our Hostel
+        </h1>
+        <p>
+            24 * 7 Power facility <br> Availabilty of Prayer Hall <br> Availabilty of Gym <br> 
+            24 * 7 Medical Center is Open
+        </p>
+    </div>
+
+    <div>
+
+        <h1>Rules of our Hostel</h1>
+        <p>
+            Hostellers are not allowed to go out or come in<br>
+            from 10 pm to 5 am without permission <br><br>
+            Ragging is strictly banned <br>
+            usage of loud speakers are prohibited
+        </p>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Book your Room">
+    </form>
+</body>
+</html>
